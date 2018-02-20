@@ -9,9 +9,22 @@ section{
   text-align:center;
   margin-top:10em;
 }
+#rand{
+  margin-bottom: 20px;
+}
 #rand:hover{
   background-color:rgb(124, 165, 212);
   color:white;
+}
+#rand:focus{
+  background-color:rgb(124, 165, 212);
+  color:white;
+}
+#searchTerm{
+  width: 500px;
+  border: solid 1px #ccc;
+  padding-top: 0px;
+  padding-bottom: 1px;
 }
 #search:hover{
   transition:all .5s;
