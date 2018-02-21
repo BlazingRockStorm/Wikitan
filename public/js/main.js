@@ -1,8 +1,3 @@
-class ErrorMessage extends React.Component {
-    render(){
-        return <h2>Error</h2>;
-    }
-}
 
 class SingleResult extends React.Component {
     render() {
@@ -86,8 +81,8 @@ class MainApp extends React.Component {
             success: (data) => {
                 this.setState({ results: data });
             },
-            error: (error) => {
-                <ErrorMessage />
+            error: function () {
+                $(".out-result").html("Error");
             }
         });
     }
